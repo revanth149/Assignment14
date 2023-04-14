@@ -1,5 +1,45 @@
 # assignment14
 
+# Step 1:- Install/Update node.js to version 8.9.x or above
+# Step 2:- run the command to install LoopBack 4 
+```sh
+npm install -g @loopback/cli
+```
+# Step 3:- create a new project using the code
+```sh
+lb4 app
+```            
+# Step 4:- Answer the prompt accordingly
+# Step 5:- Start the project using  
+```sh
+cd getting-started 
+npm start
+```            
+# Step 6:- Add a controller using 
+```sh
+lb4 controller
+```
+# Step 7:- Answer the promt accordingly 
+
+I had created a hello controller which displays Hello World! message 
+
+# Step 8:- Update the controller with the appropriate code 
+
+I had used the code below
+
+```sh
+import {get} from '@loopback/rest';
+export class HelloController {
+@get('/hello')
+hello(): string {
+return 'Hello world!';
+}
+}
+```
+# Step 9:- Start the Project using
+```sh
+npm start
+```              
 This application is generated using [LoopBack 4 CLI](https://loopback.io/doc/en/lb4/Command-line-interface.html) with the
 [initial project layout](https://loopback.io/doc/en/lb4/Loopback-application-layout.html).
 
